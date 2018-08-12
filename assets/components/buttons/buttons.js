@@ -14,5 +14,13 @@ var fn = function() {
         f.innerHTML = '+';
         plus[i].appendChild(f);
     }
+
+    var plus = document.getElementsByClassName('check');
+
+    for (var i = 0; i < plus.length; i++) {
+        var f = document.createElement('p');
+        f.innerHTML = '+';
+        plus[i].appendChild(f);
+    }
 };
 document.addEventListener('DOMContentLoaded', fn, false);

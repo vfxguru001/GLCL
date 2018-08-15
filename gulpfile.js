@@ -39,4 +39,4 @@ gulp.task('sass', function() {
         .pipe(gulp.dest(cssDest))
 });
 
-gulp.task('default', ['scripts', 'sass', 'watch']);
+gulp.task('default', ['scripts', 'sass', ]);

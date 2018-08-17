@@ -1,4 +1,4 @@
-var fn = function() {
+var fn = function fn() {
     var minus = document.getElementsByClassName('minus');
 
     for (var i = 0; i < minus.length; i++) {
@@ -15,12 +15,12 @@ var fn = function() {
         plus[i].appendChild(f);
     }
 
-    var plus = document.getElementsByClassName('check');
+    var check = document.getElementsByClassName('check');
 
-    for (var i = 0; i < plus.length; i++) {
-        var g = document.createElement('&#10004;');
+    for (var i = 0; i < check.length; i++) {
+        var g = document.createElement('p');
         g.innerHTML = '&#10004;';
-        plus[i].appendChild(g);
+        check[i].appendChild(g);
     }
 };
 document.addEventListener('DOMContentLoaded', fn, false);

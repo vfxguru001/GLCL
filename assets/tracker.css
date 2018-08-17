@@ -1,17 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
 body {
 	background-color: #333;
 	color: #CCC;
 }
 h1 {
-    font-size: 50px;
-    text-align: center;
+  font-size:50px;
+  text-align:center;
 }
 .iphone-wrapper {
-    width: 400px;
-    border: 1px solid black;
-    height: 900px;
+  width:400px;
+  border:1px solid black;
+  height:900px;
 }
 .button-row {
-    display: flex;
-    justify-content: center;
+  display:flex;
+  justify-content:center;
 }

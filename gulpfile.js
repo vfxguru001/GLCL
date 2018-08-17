@@ -8,7 +8,7 @@ let cleanCSS = require('gulp-clean-css');
 const babel = require('gulp-babel');
 
 //script paths
-var jsFiles = 'assets/**/**/*.scss',
+var jsFiles = 'assets/**/*.js',
     jsDest = 'dist/scripts';
 
 gulp.task('scripts', function() {
@@ -24,7 +24,7 @@ gulp.task('scripts', function() {
 });
 
 //scss paths
-var scssFiles = 'assets/**/**/*.scss',
+var scssFiles = ['assets/**/*.scss', 'assets/*.scss'],
     cssDest = 'dist/css';
 
 gulp.task('sass', function() {

@@ -1,17 +1,16 @@
-html {
-  font-family: sans-serif;
+li {
+  text-decoration: none;
 }
-
-.row {
-  margin-bottom: 15px;
-}
-
 .button {
   background-color: blue;
   height: 40px;
   width: 80px;
   display: inline-block;
-  margin: 0 10px;
+  margin: 10px 10px;
+}
+
+.button p {
+  color: #505253;
 }
 
 .button.round {
@@ -30,6 +29,14 @@ html {
   color: darkgoldenrod;
 }
 
+.button.round.filled {
+  background-color: gold;
+}
+
+.button.round.filled p {
+  color: #4C4F53;
+}
+
 .button.round p {
   vertical-align: middle;
   margin: auto;
@@ -37,6 +44,73 @@ html {
   color: gold;
   font-size: 31px;
 }
-li {
-  text-decoration: none;
+
+.button.square {
+  height: 45px;
+  width: 250px;
+  border-radius: 20px;
+}
+
+.button.square p {
+  vertical-align: middle;
+  margin: auto;
+  text-align: center;
+  font-size: 16px;
+  line-height: 15px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.button.square.white {
+  background-color: white;
+}
+
+.button.square.white p {
+  color: #BCBFC7;
+}
+
+.button.square.gold {
+  background-color: gold;
+}
+
+.button.square.goldlight {
+  background-color: #F0D77C;
+}
+
+.button.square.golddark {
+  background-color: darkgoldenrod;
+}
+
+.button.square.grey {
+  background-color: #4C4F53;
+  border: 3px solid gold;
+}
+
+.button.square.grey p {
+  color: gold;
+}
+
+.button.square.silver {
+  background-color: #8C8155;
+  border: 3px solid gold;
+}
+
+.button.square.silver p {
+  color: gold;
+}
+
+.button.square i {
+  color: #4C4F53;
+  font-weight: 900;
+  margin: auto 100px;
+  font-size: 25px;
+  line-height: 15px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.button.square i.goldcheck {
+  color: gold;
 }

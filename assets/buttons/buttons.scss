@@ -1,96 +1,104 @@
-.button {
-    background-color: blue;
-    height: 40px;
-    width: 80px;
+// Utilities
+@import "../utilities/_reboot.scss",
+        "../utilities/_variables.scss";
+
+.btn {
+    background: none;
+    border-color: $gold;
+    border-style: solid;
     display: inline-block;
-    margin: 10px 10px;
-    p {
-        color: #505253
+    font-weight: normal;
+    height: 45px;
+    line-height: 1;
+    margin: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 80px;
+    p, i {
+        color: $darkgray;
     }
-
-    &.round {
-        background-color: unset;
-        height: 37.5px;
-        width: 37.5px;
+    i {
+        font-weight: 900;
+    }
+    &.btn-round {
+        border-color: $goldenrod;
         border-radius: 50%;
-        border: 4px solid gold;
-
-
-
-        &.disabled {
-            border: 4px solid darkgoldenrod;
+        border-width: 4px;
+        width: 45px;
+        &.btn-disabled {
+            border-color: $darkgoldenrod;
             p {
-                color: darkgoldenrod;
+                color: $darkgoldenrod;
             }
         }
-        &.filled {
-            background-color: gold;
+        &.btn-filled {
+            background-color: $goldenrod;
+            border-color: $goldenrod;
             p {
-                color: #4C4F53;
+                color: $darkgray;
             }
         }
         p {
-            vertical-align: middle;
+            color: $goldenrod;
+            font-size: 32px;
             margin: auto;
             text-align: center;
-            color: gold;
-            font-size: 31px;
+            vertical-align: middle;
         }
     }
-    &.square {
+    &.btn-pill {
+        border-radius: 9999px;
+        border-width: 3px;
         height: 45px;
-        width: 250px;
-        border-radius: 20px;
+        width: 280px;
         p {
-            vertical-align: middle;
-            margin: auto;
-            text-align: center;
             font-size: 16px;
-            line-height: 15px;
-            text-transform: uppercase;
-            border-radius: 20px;
-            padding: 15px;
+            margin: auto;
+            vertical-align: middle;
+            span {
+                text-transform: lowercase;
+            }
         }
-        &.white {
-            background-color: white;
+        &.lightgray {
+            background-color: $lightgray;
+            border-color: $lightgray;
             p {
-                color: #BCBFC7;
+                color: #B5B5B5;
             }
         }
         &.gold {
-            background-color: gold;
+            background-color: $gold;
         }
         &.goldlight {
-            background-color: #F0D77C
-        }
-        &.golddark {
-            background-color: darkgoldenrod;
-        }
-        &.grey {
-            background-color: #4C4F53;
-            border: 3px solid gold;
-            p {
-                color: gold
+            background-color: $goldlight;
+            border-color: $goldlight;
+            p, i {
+                color: $gray;
             }
         }
-        &.silver {
-            background-color: #8C8155;
-            border: 3px solid gold;
+        &.golddark {
+            background-color: $golddark;
+            border-color: $golddark;
+        }
+        &.darkgray {
+            background-color: $darkgray;
+            border-color: $gold;
             p {
-                color: gold
+                color: $gold;
+            }
+        }
+        &.mochalight {
+            background-color: $mochalight;
+            border-color: $gold;
+            p {
+                color: $gold;
             }
         }
         i {
-            color: #4C4F53;
-            font-weight: 900;
-            margin: auto 100px;
             font-size: 25px;
-            line-height: 15px;
-            text-transform: uppercase;
-            border-radius: 20px;
-            padding: 15px;
+            margin: auto 100px;
             &.goldcheck {
-                color: gold;
+                color: $gold;
             }
         }
     }

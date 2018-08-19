@@ -1,0 +1,31 @@
+// DEFAULT FONT
+// ==============================
+/* @font-face {
+    font-family: 'Nunito';
+    src: url('https://fonts.googleapis.com/css?family=Nunito');
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// COLOR VARS
+// ==============================
+$darkgoldenrod: #8A7B45;
+$darkgray: #3F4347;
+$gold: #F4D050;
+$golddark: #C1A43E;
+$goldenrod: #D4B443;
+$goldlight: #F7DA72;
+$gray: #66696C;
+$lightgray: #E4E8ED;
+$mochalight: #897B4A;
+$mocha: #8A7B45;
+
+// GLOBALS
+// ==============================
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+	background-color: $darkgray;
+}

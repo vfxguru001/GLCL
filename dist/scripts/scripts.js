@@ -20,12 +20,6 @@ var tracker = function tracker() {
 document.addEventListener('DOMContentLoaded', tracker, false);
 'use strict';
 
-var list = [];
-var myFunkyFunk = function myFunkyFunk() {
-  console.log('the funk');
-};
-'use strict';
-
 var fn = function fn() {
     var minus = document.getElementsByClassName('minus');
 
@@ -43,12 +37,18 @@ var fn = function fn() {
         plus[i].appendChild(f);
     }
 
-    var check = document.getElementsByClassName('check');
-
-    for (var i = 0; i < check.length; i++) {
-        var g = document.createElement('p');
-        g.innerHTML = '&#10004;';
+    /*var check = document.getElementsByClassName('check');
+      for (var i = 0; i < check.length; i++) {
+        var g = document.createElement('i');
+        g.innerHTML = 'myCheck';
+        g.classList.add('fas fa-check');
         check[i].appendChild(g);
-    }
+    }*/
 };
 document.addEventListener('DOMContentLoaded', fn, false);
+'use strict';
+
+var list = [];
+var myFunkyFunk = function myFunkyFunk() {
+  console.log('the funk');
+};

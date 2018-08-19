@@ -1,37 +1,105 @@
-html {
-	font-family: sans-serif;
-}
-.row {
-    margin-bottom: 15px;
-}
+// Utilities
+@import "../utilities/_reboot.scss",
+        "../utilities/_variables.scss";
 
-.button {
-    background-color: blue;
-    height: 40px;
-    width: 80px;
+.btn {
+    background: none;
+    border-color: $gold;
+    border-style: solid;
     display: inline-block;
-    margin: 0 10px;
-
-    &.round {
-        background-color: unset;
-        height: 37.5px;
-        width: 37.5px;
+    font-weight: normal;
+    height: 45px;
+    line-height: 1;
+    margin: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 80px;
+    p, i {
+        color: $darkgray;
+    }
+    i {
+        font-weight: 900;
+    }
+    &.btn-round {
+        border-color: $goldenrod;
         border-radius: 50%;
-        border: 4px solid gold;
-
-        &.disabled {
-            border: 4px solid darkgoldenrod;
+        border-width: 4px;
+        width: 45px;
+        &.btn-disabled {
+            border-color: $darkgoldenrod;
             p {
-                color: darkgoldenrod;
+                color: $darkgoldenrod;
             }
         }
-
+        &.btn-filled {
+            background-color: $goldenrod;
+            border-color: $goldenrod;
+            p {
+                color: $darkgray;
+            }
+        }
         p {
-            vertical-align: middle;
+            color: $goldenrod;
+            font-size: 32px;
             margin: auto;
             text-align: center;
-            color: gold;
-            font-size: 31px;
+            vertical-align: middle;
+        }
+    }
+    &.btn-pill {
+        border-radius: 9999px;
+        border-width: 3px;
+        height: 45px;
+        width: 280px;
+        p {
+            font-size: 16px;
+            margin: auto;
+            vertical-align: middle;
+            span {
+                text-transform: lowercase;
+            }
+        }
+        &.lightgray {
+            background-color: $lightgray;
+            border-color: $lightgray;
+            p {
+                color: #B5B5B5;
+            }
+        }
+        &.gold {
+            background-color: $gold;
+        }
+        &.goldlight {
+            background-color: $goldlight;
+            border-color: $goldlight;
+            p, i {
+                color: $gray;
+            }
+        }
+        &.golddark {
+            background-color: $golddark;
+            border-color: $golddark;
+        }
+        &.darkgray {
+            background-color: $darkgray;
+            border-color: $gold;
+            p {
+                color: $gold;
+            }
+        }
+        &.mochalight {
+            background-color: $mochalight;
+            border-color: $gold;
+            p {
+                color: $gold;
+            }
+        }
+        i {
+            font-size: 25px;
+            margin: auto 100px;
+            &.goldcheck {
+                color: $gold;
+            }
         }
     }
 }

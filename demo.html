@@ -1,33 +1,64 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  	<meta charset="UTF-8">
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="./dist/css/styles.css">
     <script type="text/javascript" src="./dist/scripts/scripts.min.js"></script>
-  </head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
 
-  <body>
+<body>
 
-    <h2>Buttons</h2>
-
-    <h3>Round Buttons</h3>
     <div class="row">
-    	<div class="button round plus">
-    	</div>
-    	<div class="button round minus">
-	    </div>
-    </div><!-- /.row -->
+        <button class="btn btn-round btn-disabled plus"></button>
+        <button class="btn btn-round btn-disabled minus"></button>
+    </div>
     <div class="row">
-	    <div class="button round plus disabled">
-	    </div>
-	    <div class="button round minus disabled">
-	    </div>
-	</div><!-- /.row -->
-
-    <h3>Square Buttons</h3>
+        <button class="btn btn-round plus"></button>
+        <button class="btn btn-round minus"></button>
+    </div>
     <div class="row">
-    	<div class="button"></div>
-	</div><!-- /.row -->
+        <button class="btn btn-round btn-filled plus"></button>
+        <button class="btn btn-round btn-filled minus"></button>
+    </div>
+    <div class="row">
+        <button class="btn btn-pill lightgray">
+            <p>Inactive</p>
+        </button>
+    </div>
+    <div class="row">
+        <button class="btn btn-pill gold">
+            <p>NORMAL</p>
+        </button>
+        <button class="btn btn-pill goldlight">
+            <p>HOVER[<span>web only</span>]</p>
+        </button>
+        <button class="btn btn-pill golddark">
+            <p>CLICK/TAP</p>
+        </button>
+    </div>
+    <div class="row">
+        <button class="btn btn-pill gold"><i class="fas fa-check"></i></button>
+        <button class="btn btn-pill goldlight"><i class="fas fa-check"></i></button>
+        <button class="btn btn-pill golddark"><i class="fas fa-check"></i></button>
+    </div>
+    <div class="row">
+        <button class="btn btn-pill darkgray">
+            <p>NORMAL</p>
+        </button>
+        <button class="btn btn-pill mochalight">
+            <p>HOVER[<span>web only</span>]</p>
+        </button>
+        <button class="btn btn-pill gold">
+            <p>CLICK/TAP</p>
+        </button>
+    </div>
+    <div class="row">
+        <button class="btn btn-pill darkgray"><i class="fas fa-check goldcheck"></i></button>
+        <button class="btn btn-pill mochalight"><i class="fas fa-check goldcheck"></i></button>
+        <button class="btn btn-pill gold"><i class="fas fa-check"></i></button>
+    </div>
+</body>
 
-  </body>
 </html>

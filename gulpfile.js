@@ -6,6 +6,8 @@ var sass = require('gulp-sass');
 var concatCss = require('gulp-concat-css');
 let cleanCSS = require('gulp-clean-css');
 const babel = require('gulp-babel');
+const gulpPostcss = require('gulp-postcss');
+const cssDeclarationSorter = require('css-declaration-sorter');
 
 //script paths
 var jsFiles = 'assets/**/*.js',
@@ -25,7 +27,8 @@ gulp.task('scripts', function() {
 
 //scss paths
 var scssFiles = 'assets/**/*.scss',
-    cssDest = 'dist/css';
+    cssFiles = 'dist/css/*.css'
+cssDest = 'dist/css';
 
 gulp.task('sass', function() {
     return gulp.src(scssFiles)
@@ -39,4 +42,12 @@ gulp.task('sass', function() {
         .pipe(gulp.dest(cssDest))
 });
 
-gulp.task('default', ['scripts', 'sass', 'watch']);
+gulp.task('css', function() {
+    return gulp.src(cssFiles)
+        .pipe(gulpPostcss([cssDeclarationSorter({
+            order: 'alphabetically'
+        })]))
+        .pipe(gulp.dest(cssDest));
+});
+
+gulp.task('default', ['scripts', 'sass', 'css']);

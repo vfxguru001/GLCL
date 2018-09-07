@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 * {
   font-family: 'Nunito', sans-serif;
 }
+
 .button {
-  background-color: blue;
   height: 40px;
   width: 80px;
   display: inline-block;
@@ -11,7 +12,7 @@
 }
 
 .button p {
-  color: #505253;
+  color: #000000;
 }
 
 .button.round {
@@ -61,12 +62,12 @@
   margin: auto;
   text-align: center;
   line-height: 45px;
-  color: #4B4F53;
+  color: #4C4F53;
   font-size: 14px;
 }
 
 .button.square i {
-  color: #4B4F53;
+  color: #4C4F53;
   font-weight: 900;
   margin: auto 125px;
   vertical-align: middle;
@@ -134,7 +135,6 @@
   line-height: 15px;
   text-transform: uppercase;
   border-radius: 20px;
-  font-family: Helvetica-light;
   padding: 15px;
 }
 
@@ -190,6 +190,15 @@
 .button.square i.goldcheck {
   color: gold;
 }
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
 li {
   text-decoration: none;
+}
+#calendar-head,
+.calendar-row {
+  display: flex;
+  justify-content: space-around;
 }

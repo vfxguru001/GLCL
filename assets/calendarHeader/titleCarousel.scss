@@ -2,7 +2,7 @@
 * {
 	color: $body-text;
 }
-.calendar-header{
+.title-carousel{
   display: flex;
   width: 250px;
   background-color: $mediumGrey;
@@ -11,7 +11,7 @@
   margin: 5px auto;
   border-radius: 5px;
 }
-#title {
+#title{
 	font-weight: 600;
 	letter-spacing: .2rem;
 }

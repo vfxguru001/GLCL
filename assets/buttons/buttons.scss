@@ -8,7 +8,7 @@
     display: inline-block;
     margin: 10px 10px;
     p {
-        color: $buttonText
+        color: $body-text;
     }
 
     &.round {
@@ -42,7 +42,7 @@
         }
     }
 
-    &.square {
+    &.pill {
         height: 45px;
         width: 300px;
         border-radius: 50px;
@@ -112,7 +112,7 @@
             }
         }
     }
-    &.square {
+    &.pill {
         height: 45px;
         width: 250px;
         border-radius: 20px;

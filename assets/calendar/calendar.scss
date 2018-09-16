@@ -1,10 +1,4 @@
-#calendar-head,
-.calendar-row {
-  display: flex;
-  justify-content: space-around;
-
-  p {
-    width: 100%;
-    text-align: center;
-  }
+#calendar-head, .calendar-row{
+  display:flex;
+  justify-content:space-around;
 }

@@ -1,15 +1,12 @@
 let calendar = () => {
-
+  let lastDay = (year, month) => {
+    return new Date(year, month, 0).getDate();
+  }
   let firstDay = (year, month) => {
     return new Date(year, month - 1, 1).getDay();
   }
 
-  let lastDay = (year, month) => {
-    return new Date(year, month, 0).getDate();
-  }
-
   let daysOfTheWeek = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
-
   var calendarHead = document.getElementById('calendar-head');
   let populateCalendarHead = () => {
     for(let i = 0; i<daysOfTheWeek.length; i++){
@@ -22,24 +19,17 @@ let calendar = () => {
 
   let calendarBody = document.getElementById('calendar-body');
   let populateCalendarBody = () => {
-    let daysInRow = 7;
-    let totalRows = 6;
+    var daysInRow = 7;
+    var totalRows = 5;
     // var totalDays = daysInRow * totalRows;
-    let currentRows = 0;
-    let currentDaysInMonth = lastDay(2018, 9);
-    let firstDayOfMonth = firstDay(2018, 9);
-    let currentDayOfMonthIndex = 1;
-    let currentCalendarDayIndex = 0;
+    var currentRows = 0;
 
     while(currentRows < totalRows){
       let calendarRow = document.createElement('div');
       for(let i = 0; i<daysInRow; i++){
+        console.log('within for loop');
         let day = document.createElement('p');
-        if(currentCalendarDayIndex>=firstDayOfMonth && currentDayOfMonthIndex <= currentDaysInMonth){
-          day.innerHTML = currentDayOfMonthIndex;
-          currentDayOfMonthIndex++;
-        }
-        currentCalendarDayIndex++;
+        day.innerHTML = i;
         calendarRow.appendChild(day);
       }
       calendarBody

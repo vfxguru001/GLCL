@@ -23,17 +23,14 @@ document.addEventListener('DOMContentLoaded', fn, false);
 'use strict';
 
 var calendar = function calendar() {
-
+  var lastDay = function lastDay(year, month) {
+    return new Date(year, month, 0).getDate();
+  };
   var firstDay = function firstDay(year, month) {
     return new Date(year, month - 1, 1).getDay();
   };
 
-  var lastDay = function lastDay(year, month) {
-    return new Date(year, month, 0).getDate();
-  };
-
   var daysOfTheWeek = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
-
   var calendarHead = document.getElementById('calendar-head');
   var populateCalendarHead = function populateCalendarHead() {
     for (var i = 0; i < daysOfTheWeek.length; i++) {
@@ -47,23 +44,16 @@ var calendar = function calendar() {
   var calendarBody = document.getElementById('calendar-body');
   var populateCalendarBody = function populateCalendarBody() {
     var daysInRow = 7;
-    var totalRows = 6;
-    // var totalDays = daysInRow * totalRows;
+    var totalRows = 5;
+    var totalDays = daysInRow * totalRows;
     var currentRows = 0;
-    var currentDaysInMonth = lastDay(2018, 9);
-    var firstDayOfMonth = firstDay(2018, 9);
-    var currentDayOfMonthIndex = 1;
-    var currentCalendarDayIndex = 0;
 
     while (currentRows < totalRows) {
       var calendarRow = document.createElement('div');
       for (var i = 0; i < daysInRow; i++) {
+        console.log('within for loop');
         var day = document.createElement('p');
-        if (currentCalendarDayIndex >= firstDayOfMonth && currentDayOfMonthIndex <= currentDaysInMonth) {
-          day.innerHTML = currentDayOfMonthIndex;
-          currentDayOfMonthIndex++;
-        }
-        currentCalendarDayIndex++;
+        day.innerHTML = i;
         calendarRow.appendChild(day);
       }
       calendarBody.appendChild(calendarRow).className = "calendar-row";
@@ -71,37 +61,13 @@ var calendar = function calendar() {
     }
   };
   populateCalendarBody();
+
+  daysOfTheWeek.length; //7
+  daysOfTheWeek.length; //6
+
 };
 
 document.addEventListener('DOMContentLoaded', calendar, false);
-'use strict';
-
-var calendarHeader = function calendarHeader() {
-  var month = document.getElementById('month');
-  var monthSetter = function monthSetter(newMonth) {
-    month.innerHTML = newMonth;
-  };
-  monthSetter('September');
-  var monthArr = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  console.log(monthArr[0]);
-  var leftArrow = document.getElementById('left-arrow');
-  var rightArrow = document.getElementById('right-arrow');
-  var monthIndex = 8;
-  leftArrow.addEventListener('click', function () {
-    if (monthIndex > 0) {
-      monthIndex--;
-      monthSetter(monthArr[monthIndex]);
-    }
-  });
-  rightArrow.addEventListener('click', function () {
-    if (monthIndex < monthArr.length - 1) {
-      monthIndex++;
-      monthSetter(monthArr[monthIndex]);
-    }
-  });
-};
-
-document.addEventListener('DOMContentLoaded', calendarHeader, false);
 'use strict';
 
 var list = [];

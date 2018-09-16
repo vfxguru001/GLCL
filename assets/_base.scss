@@ -1,5 +1,11 @@
+// DEFAULT FONT
+// ==============================
 @import url('https://fonts.googleapis.com/css?family=Nunito');
-
 * {
-	font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+// GLOBALS
+// ==============================
+body {
+    background-color: $body-bg;
 }

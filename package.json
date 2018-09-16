@@ -17,13 +17,14 @@
   },
   "homepage": "https://github.com/cheshirefirewire/GLCL-1#readme",
   "devDependencies": {
+    "css-declaration-sorter": "^4.0.1",
     "gulp": "latest",
-    "gulp-concat": "latest",
-    "gulp-rename": "latest",
-    "gulp-uglify": "latest",
-    "gulp-sass": "latest",
-    "gulp-concat-css": "latest",
+    "gulp-babel": "latest",
     "gulp-clean-css": "latest",
-    "gulp-babel": "latest"
+    "gulp-concat": "latest",
+    "gulp-concat-css": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest"
   }
 }

@@ -1,0 +1,20 @@
+@import '../main';
+* {
+	color: $body-text;
+}
+.calendar-header{
+  display: flex;
+  width: 250px;
+  background-color: $mediumGrey;
+  justify-content: space-around;
+  color: $white;
+  margin: 5px auto;
+  border-radius: 5px;
+}
+#title {
+	font-weight: 600;
+	letter-spacing: .2rem;
+}
+.arrow{
+  cursor:pointer;
+}

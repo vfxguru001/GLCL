@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito");
 @import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 * {
   font-family: 'Nunito', sans-serif;
 }
@@ -201,4 +202,25 @@ li {
 .calendar-row {
   display: flex;
   justify-content: space-around;
+}
+
+#calendar-head p,
+.calendar-row p {
+  width: 100%;
+  text-align: center;
+}
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+.calendar-header {
+  display: flex;
+  width: 250px;
+  background-color: lightgray;
+  justify-content: space-around;
+  color: white;
+}
+
+.arrow {
+  cursor: pointer;
 }

@@ -1,43 +1,39 @@
 <html>
 
 <head>
-  <link rel="stylesheet" type="text/css" href="./dist/css/styles.css">
-  <link rel="stylesheet" type="text/css" href="./tracker.css">
-  <script type="text/javascript" src="./dist/scripts/scripts.min.js"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous">
-  <script type="text/javascript" src="./tracker.js"></script>
+    <link rel="stylesheet" type="text/css" href="./dist/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./tracker.css">
+    <script type="text/javascript" src="./dist/scripts/scripts.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script type="text/javascript" src="./tracker.js"></script>
 </head>
 
-<body style="background-color: #4B4F53">
-  <div class="iphone-wrapper">
-    <div class="navigate">
-      <i class="fas fa-arrow-left"></i>
-      <i class="fas fa-times"></i>
+<body>
+    <div class="iphone-wrapper">
+        <div class="navigate">
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-times"></i>
+        </div>
+        <!-- Counter text -->
+        <h1><span id="counter">0</span> min</h1>
+        <!-- 5 mins -->
+        <div class="button-row-round inc">
+            <div class="button round minus" id="minus-5"></div>
+            <p>5 MINS</p>
+            <div class="button round plus" id="plus-5"></div>
+        </div>
+        <!-- 15 mins -->
+        <div class="button-row-round inc">
+            <div class="button round minus" id='minus-15'></div>
+            <p>15 MINS</p>
+            <div class="button round plus" id="plus-15"></div>
+        </div>
+        <div class="button-row">
+            <div class="button square normal">
+                <i class="fas fa-check"></i>
+            </div>
+        </div>
     </div>
-    <!-- Counter text -->
-    <h1><span id="counter">0</span> min</h1>
-    <!-- 5 mins -->
-    <div class="button-row-round inc">
-      <div class="button round minus" id="minus-5"></div>
-      <p>5 MINS</p>
-      <div class="button round plus" id="plus-5"></div>
-    </div>
-    <!-- 15 mins -->
-    <div class="button-row-round inc">
-      <div class="button round minus" id='minus-15'></div>
-      <p>15 MINS</p>
-      <div class="button round plus" id="plus-15" ></div>
-    </div>
-
-    <div class="button-row">
-      <div class="button square normal">
-        <i class="fas fa-check"></i>
-      </div>
-    </div>
-
-  </div>
-
 </body>
 
 </html>

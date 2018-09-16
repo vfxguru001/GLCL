@@ -1,0 +1,13 @@
+@import '../main';
+
+.calendar-header{
+  display: flex;
+  width: 250px;
+  background-color: $tertiary;
+  justify-content: space-around;
+  color: $white;
+}
+
+.arrow{
+  cursor:pointer;
+}

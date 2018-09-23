@@ -1,32 +1,31 @@
 {
-  "name": "glcl-1",
-  "version": "1.0.0",
-  "description": "package.json for golden light component library",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cheshirefirewire/GLCL-1.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cheshirefirewire/GLCL-1/issues"
-  },
-  "homepage": "https://github.com/cheshirefirewire/GLCL-1#readme",
-  "devDependencies": {
-    "css-declaration-sorter": "^4.0.1",
-    "gulp": "latest",
-    "gulp-babel": "^8.0.0",
-    "gulp-clean-css": "latest",
-    "gulp-concat": "latest",
-    "gulp-concat-css": "latest",
-    "gulp-rename": "latest",
-    "gulp-sass": "latest",
-    "gulp-uglify": "latest",
-    "gulp-watch": "^5.0.1"
-  },
-  "dependencies": {}
+    "name": "glcl-1",
+    "version": "1.0.0",
+    "description": "package.json for golden light component library",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cheshirefirewire/GLCL-1.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/cheshirefirewire/GLCL-1/issues"
+    },
+    "homepage": "https://github.com/cheshirefirewire/GLCL-1#readme",
+    "devDependencies": {
+        "gulp": "latest",
+        "gulp-babel": "latest",
+        "gulp-clean-css": "latest",
+        "gulp-concat": "latest",
+        "gulp-concat-css": "latest",
+        "gulp-rename": "latest",
+        "gulp-sass": "latest",
+        "gulp-uglify": "latest",
+        "gulp-watch": "^5.0.1"
+    },
+    "dependencies": {}
 }

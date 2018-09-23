@@ -198,6 +198,17 @@ body {
 .button.pill i.goldcheck {
   color: #F1CC4C;
 }
+#calendar-head,
+.calendar-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+#calendar-head p,
+.calendar-row p {
+  width: 100%;
+  text-align: center;
+}
 /* @import '../reboot'; */
 
 * {
@@ -242,15 +253,4 @@ body {
 
 .arrow {
   cursor: pointer;
-}
-#calendar-head,
-.calendar-row {
-  display: flex;
-  justify-content: space-around;
-}
-
-#calendar-head p,
-.calendar-row p {
-  width: 100%;
-  text-align: center;
 }

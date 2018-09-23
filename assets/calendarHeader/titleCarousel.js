@@ -18,22 +18,24 @@ let titleCarouselWrapper = () => {
     let titleSetter = (newtitle) => {
         title.innerHTML = newtitle;
     };
-    titleSetter('September');
-    let monthArr = JSON.parse(titleCarousel.getAttribute('title-arr'));
 
+    let titleArr = JSON.parse(titleCarousel.getAttribute('title-arr'));
     let leftArrow = document.getElementById('left-arrow');
     let rightArrow = document.getElementById('right-arrow');
-    let titleIndex = 8;
+    let titleIndex = Number(titleCarousel.getAttribute('title-starting-index'));
+
+    titleSetter(titleArr[titleIndex]);
+
     leftArrow.addEventListener('click', () => {
         if (titleIndex > 0) {
             titleIndex--;
-            titleSetter(monthArr[titleIndex]);
+            titleSetter(titleArr[titleIndex]);
         }
     });
     rightArrow.addEventListener('click', () => {
-        if (titleIndex < monthArr.length - 1) {
+        if (titleIndex < titleArr.length - 1) {
             titleIndex++;
-            titleSetter(monthArr[titleIndex]);
+            titleSetter(titleArr[titleIndex]);
         }
     });
 };

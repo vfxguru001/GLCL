@@ -2,174 +2,190 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito");
 @import url("https://fonts.googleapis.com/css?family=Nunito");
 /* @import '../reboot'; */
+
 * {
   font-family: 'Nunito', sans-serif;
 }
+
 body {
-  background-color: #4A4E52;
+  background-color: #4a4e52;
 }
-li {
-  text-decoration: none;
-}
-#calendar-head,
-.calendar-row {
-  display: flex;
-  justify-content: space-around;
-}
-#calendar-head p,
-.calendar-row p {
-  width: 100%;
-  text-align: center;
-}
-/* @import '../reboot'; */
-* {
-  font-family: 'Nunito', sans-serif;
-}
-body {
-  background-color: #4A4E52;
-}
+
 .button {
   height: 40px;
   width: 80px;
   display: inline-block;
   margin: 10px 10px;
 }
+
 .button p {
   color: #000000;
 }
+
 .button.round {
   background-color: unset;
   height: 37.5px;
   width: 37.5px;
   border-radius: 50%;
-  border: 4px solid #F4D050;
+  border: 4px solid #F1CC4C;
 }
+
 .button.round.disabled {
-  border: 3px solid #F4CC61;
+  border: 3px solid #F1CC4C;
   opacity: 0.5;
 }
+
 .button.round.disabled p {
   opacity: 50%;
 }
+
 .button.round.filled {
-  background-color: #F4D050;
+  background-color: #F1CC4C;
 }
+
 .button.round.filled p {
-  color: #4C4F53;
+  color: #6e7174;
 }
+
 .button.round p {
   vertical-align: middle;
   margin: auto;
   text-align: center;
   line-height: 32px;
-  color: #F4CC61;
+  color: #F1CC4C;
   font-size: 40px;
 }
-.button.square {
+
+.button.pill {
   height: 45px;
   width: 300px;
-  border-radius: 50px;
-  border: 3px solid #F4CC61;
+  border-radius: 3em;
+  border: 3px solid #F1CC4C;
   margin-bottom: 20px;
 }
-.button.square p {
+
+.button.pill p {
   vertical-align: middle;
   margin: auto;
   text-align: center;
   line-height: 45px;
-  color: #4C4F53;
+  color: #6e7174;
   font-size: 14px;
 }
-.button.square i {
-  color: #4C4F53;
+
+.button.pill i {
+  color: #6e7174;
   font-weight: 900;
   margin: auto 125px;
   vertical-align: middle;
   font-size: 25px;
   line-height: 15px;
-  border-radius: 20px;
+  border-radius: 3em;
   padding: 15px;
 }
-.button.square i.gold-check {
-  color: #F4CC61;
+
+.button.pill i.gold-check {
+  color: #F1CC4C;
 }
-.button.square.inactive {
-  background-color: white;
-  border: 3px solid white;
+
+.button.pill.inactive {
+  background-color: #dfe3e8;
+  border: 3px solid #dfe3e8;
   margin-top: 20px;
 }
-.button.square.inactive p {
-  color: lightgrey;
+
+.button.pill.inactive p {
+  color: #BCBFC7;
 }
-.button.square.normal {
-  background-color: #F4CC61;
+
+.button.pill.normal {
+  background-color: #F1CC4C;
 }
-.button.square.hover {
-  background-color: #F5D67C;
-  border: 3px solid #F5D67C;
+
+.button.pill.hover {
+  background-color: #F3D66E;
+  border: 3px solid #F3D66E;
 }
-.button.square.hover p {
+
+.button.pill.hover p {
   color: #717271;
 }
-.button.square.hoverLight {
+
+.button.pill.hoverLight {
   background-color: #8D7E53;
 }
-.button.square.hoverLight p {
-  color: #F4CC61;
+
+.button.pill.hoverLight p {
+  color: #F1CC4C;
 }
-.button.square.click {
+
+.button.pill.click {
   background-color: #BEA04B;
   border: 3px solid #BEA04B;
 }
-.button.square.dark p {
-  color: #F4CC61;
+
+.button.pill.dark p {
+  color: #F1CC4C;
 }
-.button.square {
+
+.button.pill {
   height: 45px;
   width: 250px;
-  border-radius: 20px;
+  border-radius: 3em;
 }
-.button.square p {
+
+.button.pill p {
   vertical-align: middle;
   margin: auto;
   text-align: center;
   font-size: 16px;
   line-height: 15px;
   text-transform: uppercase;
-  border-radius: 20px;
+  border-radius: 3em;
   padding: 15px;
 }
-.button.square.white {
-  background-color: white;
+
+.button.pill.white {
+  background-color: #dfe3e8;
+  border: 3px solid #dfe3e8;
 }
-.button.square.white p {
+
+.button.pill.white p {
   color: #BCBFC7;
 }
-.button.square.gold {
-  background-color: #F4D050;
+
+.button.pill.gold {
+  background-color: #F1CC4C;
 }
-.button.square.goldlight {
+
+.button.pill.goldlight {
   background-color: #F0D77C;
 }
-.button.square.golddark {
-  background-color: darkgoldenrod;
+
+.button.pill.golddark {
+  background-color: #8A7B45;
 }
-.button.square.grey {
-  background-color: #4C4F53;
-  border: 3px solid #F4D050;
+
+.button.pill.gray {
+  background-color: #6e7174;
+  border: 3px solid #F1CC4C;
 }
-.button.square.grey p {
-  color: #F4D050;
+
+.button.pill.gray p {
+  color: #F1CC4C;
 }
-.button.square.silver {
-  background-color: #8C8155;
-  border: 3px solid #F4D050;
+
+.button.pill.silver {
+  background-color: #dfe3e8;
+  border: 3px solid #dfe3e8;
 }
-.button.square.silver p {
-  color: #F4D050;
+
+.button.pill.silver p {
+  color: #BCBFC7;
 }
-.button.square i {
-  color: #4C4F53;
+
+.button.pill i {
+  color: #6e7174;
   font-weight: 900;
   margin: auto 100px;
   font-size: 25px;
@@ -178,32 +194,63 @@ body {
   border-radius: 20px;
   padding: 15px;
 }
-.button.square i.goldcheck {
-  color: #F4D050;
+
+.button.pill i.goldcheck {
+  color: #F1CC4C;
 }
 /* @import '../reboot'; */
+
 * {
   font-family: 'Nunito', sans-serif;
 }
+
 body {
-  background-color: #4A4E52;
+  background-color: #4a4e52;
 }
+
+li {
+  text-decoration: none;
+}
+/* @import '../reboot'; */
+
 * {
-  color: white;
+  font-family: 'Nunito', sans-serif;
 }
-.calendar-header {
+
+body {
+  background-color: #4a4e52;
+}
+
+* {
+  color: #fff;
+}
+
+.title-carousel {
   display: flex;
   width: 250px;
-  background-color: #6E7174;
+  background-color: #6e7174;
   justify-content: space-around;
-  color: white;
+  color: #fff;
   margin: 5px auto;
   border-radius: 5px;
 }
+
 #title {
   font-weight: 600;
   letter-spacing: .2rem;
 }
+
 .arrow {
   cursor: pointer;
+}
+#calendar-head,
+.calendar-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+#calendar-head p,
+.calendar-row p {
+  width: 100%;
+  text-align: center;
 }

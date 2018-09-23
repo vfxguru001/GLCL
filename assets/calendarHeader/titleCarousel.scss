@@ -1,13 +1,13 @@
 @import '../main';
 * {
-	color: $body-text;
+	color: $color-body-text;
 }
 .title-carousel{
   display: flex;
   width: 250px;
-  background-color: $mediumGrey;
+  background-color: $color-tertiary;
   justify-content: space-around;
-  color: $white;
+  color: $color-white;
   margin: 5px auto;
   border-radius: 5px;
 }

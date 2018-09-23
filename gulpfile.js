@@ -1,13 +1,12 @@
-var gulp = require('gulp');
-var concat = require('gulp-concat');
-var rename = require('gulp-rename');
-var uglify = require('gulp-uglify');
-var sass = require('gulp-sass');
-var concatCss = require('gulp-concat-css');
+var gulp = require('gulp'),
+    concat = require('gulp-concat'),
+    rename = require('gulp-rename'),
+    uglify = require('gulp-uglify'),
+    sass = require('gulp-sass'),
+    concatCss = require('gulp-concat-css'),
+    watch = require('gulp-watch');
 let cleanCSS = require('gulp-clean-css');
 const babel = require('gulp-babel');
-
-gulp.task('default', ['scripts', 'sass']);
 
 //script paths
 var jsFiles = 'assets/**/*.js',
@@ -25,6 +24,14 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest(jsDest));
 });
 
+gulp.task('stream', function() {
+    // Endless stream mode
+    return watch(jsFiles, {
+            ignoreInitial: false
+        })
+        .pipe(gulp.dest('build'));
+});
+
 //scss paths
 var scssFiles = 'assets/**/*.scss',
     cssDest = 'dist/css';
@@ -39,6 +46,19 @@ gulp.task('sass', function() {
             compatibility: 'ie8'
         }))
         .pipe(gulp.dest(cssDest))
+});
+
+gulp.task('default', ['scripts', 'sass'], function() {
+    // watch for CSS changes
+    gulp.watch(scssFiles, function() {
+        // run styles upon changes
+        gulp.run('sass');
+    });
+    // watch for CSS changes
+    gulp.watch(jsFiles, function() {
+        // run styles upon changes
+        gulp.run('scripts');
+    });
 });
 
 //to understand how this works, watch Class 3 vid 52:00, "to create a single component with some modification"

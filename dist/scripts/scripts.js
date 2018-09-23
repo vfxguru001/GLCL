@@ -106,22 +106,24 @@ var titleCarouselWrapper = function titleCarouselWrapper() {
     var titleSetter = function titleSetter(newtitle) {
         title.innerHTML = newtitle;
     };
-    titleSetter('September');
-    var monthArr = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    console.log(titleArr[0]);
+
+    var titleArr = JSON.parse(titleCarousel.getAttribute('title-arr'));
     var leftArrow = document.getElementById('left-arrow');
     var rightArrow = document.getElementById('right-arrow');
-    var monthIndex = 8;
+    var titleIndex = Number(titleCarousel.getAttribute('title-starting-index'));
+
+    titleSetter(titleArr[titleIndex]);
+
     leftArrow.addEventListener('click', function () {
-        if (monthIndex > 0) {
-            monthIndex--;
-            titleSetter(monthArr[monthIndex]);
+        if (titleIndex > 0) {
+            titleIndex--;
+            titleSetter(titleArr[titleIndex]);
         }
     });
     rightArrow.addEventListener('click', function () {
-        if (monthIndex < monthArr.length - 1) {
-            monthIndex++;
-            titleSetter(monthArr[monthIndex]);
+        if (titleIndex < titleArr.length - 1) {
+            titleIndex++;
+            titleSetter(titleArr[titleIndex]);
         }
     });
 };

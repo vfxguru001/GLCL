@@ -19,12 +19,14 @@
   "devDependencies": {
     "css-declaration-sorter": "^4.0.1",
     "gulp": "latest",
-    "gulp-babel": "latest",
+    "gulp-babel": "^8.0.0",
     "gulp-clean-css": "latest",
     "gulp-concat": "latest",
     "gulp-concat-css": "latest",
     "gulp-rename": "latest",
     "gulp-sass": "latest",
-    "gulp-uglify": "latest"
-  }
+    "gulp-uglify": "latest",
+    "gulp-watch": "^5.0.1"
+  },
+  "dependencies": {}
 }
